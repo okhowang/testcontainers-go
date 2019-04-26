@@ -48,6 +48,7 @@ type ContainerRequest struct {
 	BindMounts   map[string]string
 	RegistryCred string
 	WaitingFor   wait.Strategy
+	NetworkMode  string
 
 	isReaper bool // indicates whether we skip setting up a reaper for this
 }
